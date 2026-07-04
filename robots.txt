@@ -7,10 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Yeti
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-Sitemap: https://t3b08-mw-club-rc.pages.dev/sitemap.xml
+Sitemap: https://mangwon-club-info.namanavi.com/sitemap.xml
