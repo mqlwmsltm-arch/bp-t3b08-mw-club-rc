@@ -1,683 +1,669 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>망원 클럽 추천 | 노이어 골드 에디터리얼</title>
-    <meta name="description" content="망원 클럽 추천을 위한 노이어 골드 에디터리얼 사이트. 전문가 시선으로 엄선한 망원동 클럽 리뷰와 심층 분석을 제공합니다. 클럽 문화의 정수를 경험하세요.">
-    <meta name="keywords" content="망원 클럽 추천, 망원 클럽, 망원동 클럽, 클럽 리뷰, 망원 나이트라이프, 클럽 문화">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <link rel="canonical" href="https://mangwon-club-info.namanavi.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="망원 클럽 추천 | 노이어 골드 에디터리얼">
-    <meta property="og:description" content="망원 클럽 추천을 위한 노이어 골드 에디터리얼 사이트. 전문가 시선으로 엄선한 망원동 클럽 리뷰와 심층 분석을 제공합니다. 클럽 문화의 정수를 경험하세요.">
-    <meta property="og:url" content="https://mangwon-club-info.namanavi.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ko_KR">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="망원 클럽 추천 | 노이어 골드 에디터리얼">
-    <meta name="twitter:description" content="망원동 클럽 문화의 정수. 전문가가 엄선한 클럽 리뷰와 추천.">
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "망원 클럽 추천",
-  "url": "https://mangwon-club-info.namanavi.com/",
-  "description": "망원동 클럽 문화의 정수. 전문가가 엄선한 클럽 리뷰와 추천.",
-  "telephone": "010-6279-0862",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "망원",
-    "addressCountry": "KR"
-  }
-}</script>
-
-    <style>
-        /* Reset & Base */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 18px;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        body {
-            font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
-            background-color: #1a1a1a;
-            color: #fafaf5;
-            padding: 0;
-            margin: 0;
-        }
-
-        /* Layout Container */
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Typography */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
-            font-weight: 400;
-            letter-spacing: 0.06em;
-            color: #fafaf5;
-        }
-
-        h1 {
-            font-size: 3.2rem;
-            line-height: 1.15;
-            letter-spacing: 0.08em;
-            margin-bottom: 24px;
-        }
-
-        h2 {
-            font-size: 2.2rem;
-            line-height: 1.3;
-            letter-spacing: 0.07em;
-            margin-bottom: 32px;
-            border-bottom: 1px solid #c5a880;
-            padding-bottom: 16px;
-        }
-
-        h3 {
-            font-size: 1.4rem;
-            letter-spacing: 0.05em;
-            margin-bottom: 16px;
-        }
-
-        p {
-            margin-bottom: 24px;
-            font-size: 1rem;
-            line-height: 1.8;
-            color: #e0ddd5;
-        }
-
-        a {
-            color: #c5a880;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-
-        a:hover {
-            border-bottom-color: #c5a880;
-        }
-
-        /* Drop Cap */
-        .drop-cap::first-letter {
-            font-size: 4.2rem;
-            float: left;
-            line-height: 0.8;
-            margin-right: 12px;
-            margin-top: 6px;
-            color: #c5a880;
-            font-weight: 700;
-        }
-
-        /* Fine Borders */
-        .fine-border {
-            border: 1px solid #c5a880;
-            padding: 32px;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #c5a880;
-            margin: 72px 0;
-            opacity: 0.4;
-        }
-
-        /* Header & Navigation */
-        header {
-            padding: 48px 0 24px;
-            border-bottom: 1px solid rgba(197, 168, 128, 0.3);
-        }
-
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.6rem;
-            letter-spacing: 0.12em;
-            color: #fafaf5;
-            font-weight: 400;
-            border: none;
-        }
-
-        .logo:hover {
-            border: none;
-            opacity: 0.8;
-        }
-
-        nav {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-        }
-
-        nav a {
-            font-size: 0.85rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #c5a880;
-            border: none;
-            padding: 4px 0;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-
-        nav a:hover {
-            border-bottom-color: #c5a880;
-        }
-
-        /* Hamburger Menu */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            padding: 4px;
-            background: none;
-            border: 1px solid #c5a880;
-        }
-
-        .hamburger span {
-            display: block;
-            width: 28px;
-            height: 1px;
-            background-color: #c5a880;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-nav {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            gap: 24px;
-            padding: 48px 0;
-            border-top: 1px solid rgba(197, 168, 128, 0.3);
-            margin-top: 24px;
-        }
-
-        .mobile-nav.active {
-            display: flex;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 120px 0 96px;
-            position: relative;
-            text-align: center;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(26,26,26,0.95) 0%, rgba(26,26,26,0.7) 50%, rgba(197,168,128,0.15) 100%);
-            pointer-events: none;
-        }
-
-        .hero .container {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            font-size: 3.6rem;
-            line-height: 1.1;
-            margin-bottom: 32px;
-        }
-
-        .hero .subtitle {
-            font-size: 1.1rem;
-            letter-spacing: 0.12em;
-            color: #c5a880;
-            margin-bottom: 48px;
-            font-style: italic;
-        }
-
-        .hero .gold-line {
-            width: 80px;
-            height: 1px;
-            background: #c5a880;
-            margin: 0 auto 32px;
-        }
-
-        /* Section Spacing */
-        section {
-            padding: 72px 0;
-            margin-bottom: 48px;
-        }
-
-        /* Review Cards */
-        .review-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 48px;
-        }
-
-        .review-card {
-            border: 1px solid #c5a880;
-            padding: 40px 32px;
-            background: rgba(26,26,26,0.8);
-        }
-
-        .review-card .meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            font-size: 0.85rem;
-            letter-spacing: 0.04em;
-            color: #c5a880;
-        }
-
-        .review-card .stars {
-            color: #c5a880;
-            letter-spacing: 4px;
-        }
-
-        .review-card blockquote {
-            font-style: italic;
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: #e0ddd5;
-            quotes: "“" "”" "‘" "’";
-        }
-
-        .review-card blockquote::before {
-            content: "“";
-            font-size: 2.4rem;
-            color: #c5a880;
-            line-height: 0.5;
-            vertical-align: -0.3em;
-            margin-right: 6px;
-        }
-
-        /* Contact */
-        .contact-info {
-            text-align: center;
-            padding: 48px 0;
-            border-top: 1px solid rgba(197, 168, 128, 0.3);
-            border-bottom: 1px solid rgba(197, 168, 128, 0.3);
-        }
-
-        .contact-info a {
-            font-size: 1.2rem;
-            letter-spacing: 0.06em;
-        }
-
-        /* Footer */
-        footer {
-            padding: 72px 0 48px;
-            text-align: center;
-            border-top: 1px solid rgba(197, 168, 128, 0.2);
-        }
-
-        footer p {
-            font-size: 0.8rem;
-            letter-spacing: 0.08em;
-            color: #8a8070;
-            margin-bottom: 8px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            html {
-                font-size: 16px;
-            }
-
-            .container {
-                padding: 0 20px;
-            }
-
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            .hero {
-                padding: 72px 0 64px;
-            }
-
-            .hero h1 {
-                font-size: 2.4rem;
-            }
-
-            nav.desktop-nav {
-                display: none;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            .mobile-nav {
-                display: none;
-            }
-
-            .mobile-nav.active {
-                display: flex;
-            }
-
-            section {
-                padding: 48px 0;
-                margin-bottom: 24px;
-            }
-
-            .review-card {
-                padding: 28px 20px;
-            }
-
-            .review-card .meta {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 8px;
-            }
-
-            hr {
-                margin: 48px 0;
-            }
-
-            .contact-info {
-                padding: 32px 0;
-            }
-
-            footer {
-                padding: 48px 0 32px;
-            }
-
-            .header-inner {
-                padding: 0 4px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            html {
-                font-size: 15px;
-            }
-
-            .container {
-                padding: 0 16px;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>망원 클럽 추천 | 노이어 골드 에디터리얼</title>
+ <meta name="description" content="망원 클럽 추천을 위한 노이어 골드 에디터리얼 사이트. 전문가 시선으로 엄선한 망원동 클럽 리뷰와 심층 분석을 제공합니다. 클럽 문화의 정수를 경험하세요.">
+ <meta name="keywords" content="망원 클럽 추천, 망원 클럽, 망원동 클럽, 클럽 리뷰, 망원 나이트라이프, 클럽 문화">
+ <link rel="canonical" href="https://mangwon-club-info.namanavi.com/">
+
+ <!-- Open Graph -->
+ <meta property="og:title" content="망원 클럽 추천 | 노이어 골드 에디터리얼">
+ <meta property="og:description" content="망원 클럽 추천을 위한 노이어 골드 에디터리얼 사이트. 전문가 시선으로 엄선한 망원동 클럽 리뷰와 심층 분석을 제공합니다. 클럽 문화의 정수를 경험하세요.">
+ <meta property="og:url" content="https://mangwon-club-info.namanavi.com/">
+ <meta property="og:type" content="website">
+ <meta property="og:locale" content="ko_KR">
+
+ <!-- Twitter Card -->
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="망원 클럽 추천 | 노이어 골드 에디터리얼">
+ <meta name="twitter:description" content="망원동 클럽 문화의 정수. 전문가가 엄선한 클럽 리뷰와 추천.">
+
+ <!-- JSON-LD Schema -->
+ <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "WebSite", "name": "망원 클럽 추천", "url": "https://mangwon-club-info.namanavi.com/", "description": "망원동 클럽 문화의 정수.</script>
+
+ <style>
+ /* Reset & Base */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ html {
+ font-size: 18px;
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+
+ body {
+ font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
+ background-color: #1a1a1a;
+ color: #fafaf5;
+ padding: 0;
+ margin: 0;
+ }
+
+ /* Layout Container */
+ .container {
+ max-width: 720px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+
+ /* Typography */
+ h1, h2, h3, h4, h5, h6 {
+ font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
+ font-weight: 400;
+ letter-spacing: 0.06em;
+ color: #fafaf5;
+ }
+
+ h1 {
+ font-size: 3.2rem;
+ line-height: 1.15;
+ letter-spacing: 0.08em;
+ margin-bottom: 24px;
+ }
+
+ h2 {
+ font-size: 2.2rem;
+ line-height: 1.3;
+ letter-spacing: 0.07em;
+ margin-bottom: 32px;
+ border-bottom: 1px solid #c5a880;
+ padding-bottom: 16px;
+ }
+
+ h3 {
+ font-size: 1.4rem;
+ letter-spacing: 0.05em;
+ margin-bottom: 16px;
+ }
+
+ p {
+ margin-bottom: 24px;
+ font-size: 1rem;
+ line-height: 1.8;
+ color: #e0ddd5;
+ }
+
+ a {
+ color: #c5a880;
+ text-decoration: none;
+ border-bottom: 1px solid transparent;
+ transition: border-color 0.3s ease;
+ }
+
+ a:hover {
+ border-bottom-color: #c5a880;
+ }
+
+ /* Drop Cap */
+ .drop-cap::first-letter {
+ font-size: 4.2rem;
+ float: left;
+ line-height: 0.8;
+ margin-right: 12px;
+ margin-top: 6px;
+ color: #c5a880;
+ font-weight: 700;
+ }
+
+ /* Fine Borders */
+ .fine-border {
+ border: 1px solid #c5a880;
+ padding: 32px;
+ }
+
+ hr {
+ border: none;
+ border-top: 1px solid #c5a880;
+ margin: 72px 0;
+ opacity: 0.4;
+ }
+
+ /* Header & Navigation */
+ header {
+ padding: 48px 0 24px;
+ border-bottom: 1px solid rgba(197, 168, 128, 0.3);
+ }
+
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-size: 1.6rem;
+ letter-spacing: 0.12em;
+ color: #fafaf5;
+ font-weight: 400;
+ border: none;
+ }
+
+ .logo:hover {
+ border: none;
+ opacity: 0.8;
+ }
+
+ nav {
+ display: flex;
+ gap: 32px;
+ align-items: center;
+ }
+
+ nav a {
+ font-size: 0.85rem;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ color: #c5a880;
+ border: none;
+ padding: 4px 0;
+ border-bottom: 1px solid transparent;
+ transition: border-color 0.3s ease;
+ }
+
+ nav a:hover {
+ border-bottom-color: #c5a880;
+ }
+
+ /* Hamburger Menu */
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ padding: 4px;
+ background: none;
+ border: 1px solid #c5a880;
+ }
+
+ .hamburger span {
+ display: block;
+ width: 28px;
+ height: 1px;
+ background-color: #c5a880;
+ transition: all 0.3s ease;
+ }
+
+ .mobile-nav {
+ display: none;
+ flex-direction: column;
+ align-items: center;
+ gap: 24px;
+ padding: 48px 0;
+ border-top: 1px solid rgba(197, 168, 128, 0.3);
+ margin-top: 24px;
+ }
+
+ .mobile-nav.active {
+ display: flex;
+ }
+
+ /* Hero Section */
+ .hero {
+ padding: 120px 0 96px;
+ position: relative;
+ text-align: center;
+ }
+
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(135deg, rgba(26,26,26,0.95) 0%, rgba(26,26,26,0.7) 50%, rgba(197,168,128,0.15) 100%);
+ pointer-events: none;
+ }
+
+ .hero .container {
+ position: relative;
+ z-index: 1;
+ }
+
+ .hero h1 {
+ font-size: 3.6rem;
+ line-height: 1.1;
+ margin-bottom: 32px;
+ }
+
+ .hero .subtitle {
+ font-size: 1.1rem;
+ letter-spacing: 0.12em;
+ color: #c5a880;
+ margin-bottom: 48px;
+ font-style: italic;
+ }
+
+ .hero .gold-line {
+ width: 80px;
+ height: 1px;
+ background: #c5a880;
+ margin: 0 auto 32px;
+ }
+
+ /* Section Spacing */
+ section {
+ padding: 72px 0;
+ margin-bottom: 48px;
+ }
+
+ /* Review Cards */
+ .review-grid {
+ display: flex;
+ flex-direction: column;
+ gap: 48px;
+ }
+
+ .review-card {
+ border: 1px solid #c5a880;
+ padding: 40px 32px;
+ background: rgba(26,26,26,0.8);
+ }
+
+ .review-card .meta {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 20px;
+ font-size: 0.85rem;
+ letter-spacing: 0.04em;
+ color: #c5a880;
+ }
+
+ .review-card .stars {
+ color: #c5a880;
+ letter-spacing: 4px;
+ }
+
+ .review-card blockquote {
+ font-style: italic;
+ font-size: 1.05rem;
+ line-height: 1.8;
+ color: #e0ddd5;
+ quotes: "“" "”" "‘" "’";
+ }
+
+ .review-card blockquote::before {
+ content: "“";
+ font-size: 2.4rem;
+ color: #c5a880;
+ line-height: 0.5;
+ vertical-align: -0.3em;
+ margin-right: 6px;
+ }
+
+ /* Contact */
+ .contact-info {
+ text-align: center;
+ padding: 48px 0;
+ border-top: 1px solid rgba(197, 168, 128, 0.3);
+ border-bottom: 1px solid rgba(197, 168, 128, 0.3);
+ }
+
+ .contact-info a {
+ font-size: 1.2rem;
+ letter-spacing: 0.06em;
+ }
+
+ /* Footer */
+ footer {
+ padding: 72px 0 48px;
+ text-align: center;
+ border-top: 1px solid rgba(197, 168, 128, 0.2);
+ }
+
+ footer p {
+ font-size: 0.8rem;
+ letter-spacing: 0.08em;
+ color: #8a8070;
+ margin-bottom: 8px;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ html {
+ font-size: 16px;
+ }
+
+ .container {
+ padding: 0 20px;
+ }
+
+ h1 {
+ font-size: 2.2rem;
+ }
+
+ h2 {
+ font-size: 1.6rem;
+ }
+
+ .hero {
+ padding: 72px 0 64px;
+ }
+
+ .hero h1 {
+ font-size: 2.4rem;
+ }
+
+ nav.desktop-nav {
+ display: none;
+ }
+
+ .hamburger {
+ display: flex;
+ }
+
+ .mobile-nav {
+ display: none;
+ }
+
+ .mobile-nav.active {
+ display: flex;
+ }
+
+ section {
+ padding: 48px 0;
+ margin-bottom: 24px;
+ }
+
+ .review-card {
+ padding: 28px 20px;
+ }
+
+ .review-card .meta {
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 8px;
+ }
+
+ hr {
+ margin: 48px 0;
+ }
+
+ .contact-info {
+ padding: 32px 0;
+ }
+
+ footer {
+ padding: 48px 0 32px;
+ }
+
+ .header-inner {
+ padding: 0 4px;
+ }
+ }
+
+ @media (max-width: 480px) {
+ html {
+ font-size: 15px;
+ }
+
+ .container {
+ padding: 0 16px;
+ }
+
+ h1 {
+ font-size: 1.8rem;
+ }
+
+ .hero h1 {
+ font-size: 2rem;
+ }
+ }
+ </style>
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container header-inner">
-            <a href="/" class="logo">MANGWON CLUB</a>
-            <nav class="desktop-nav">
-                <a href="#">에디터리얼</a>
-                <a href="#">리뷰</a>
-                <a href="#">연락처</a>
-            </nav>
-            <div class="hamburger" onclick="toggleMenu()" aria-label="메뉴 열기" role="button" tabindex="0">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="container mobile-nav" id="mobileNav">
-            <a href="#">에디터리얼</a>
-            <a href="#">리뷰</a>
-            <a href="#">연락처</a>
-        </div>
-    </header>
+ <!-- Header -->
+ <header>
+ <div class="container header-inner">
+ <a href="/" class="logo">MANGWON CLUB</a>
+ <nav class="desktop-nav">
+ <a href="#">에디터리얼</a>
+ <a href="#">리뷰</a>
+ <a href="#">연락처</a>
+ </nav>
+ <div class="hamburger" onclick="toggleMenu()" aria-label="메뉴 열기" role="button" tabindex="0">
+ 
+ 
+ 
+ </div>
+ </div>
+ <div class="container mobile-nav" id="mobileNav">
+ <a href="#">에디터리얼</a>
+ <a href="#">리뷰</a>
+ <a href="#">연락처</a>
+ </div>
+ </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="gold-line"></div>
-            <h1>망원 클럽 추천<br>노이어 골드 에디션</h1>
-            <p class="subtitle">전문가가 엄선한 망원동 클럽 문화의 정수</p>
-            <p class="drop-cap" style="max-width: 600px; margin: 0 auto; text-align: left;">
-                망원동은 서울의 숨겨진 클럽 문화의 보고입니다. 전통과 현대가 공존하는 이 지역은 독특한 음악적 경험과 고급스러운 인테리어로 차별화된 나이트라이프를 선사합니다. 본 에디터리얼은 엄격한 기준으로 선별한 최고의 클럽들을 소개합니다.
-            </p>
-        </div>
-    </section>
+ <!-- Hero -->
+ <section class="hero">
+ <div class="container">
+ 
+ <h1>망원 클럽 추천<br>노이어 골드 에디션</h1>
+ <p class="subtitle">전문가가 엄선한 망원동 클럽 문화의 정수</p>
+ <p class="drop-cap" style="max-width: 600px; margin: 0 auto; text-align: left;">
+ 망원동은 서울의 숨겨진 클럽 문화의 보고입니다. 전통과 현대가 공존하는 이 지역은 독특한 음악적 경험과 고급스러운 인테리어로 차별화된 나이트라이프를 선사합니다. 본 에디터리얼은 엄격한 기준으로 선별한 최고의 클럽들을 소개합니다.
+ </p>
+ </div>
+ </section>
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
+ <!-- Main Content -->
+ <main>
+ <div class="container">
 
-            <!-- Section: Introduction -->
-            <section>
-                <h2>에디터리얼 노트</h2>
-                <p>
-                    클럽 문화는 단순한 유흥을 넘어 하나의 예술적 표현입니다. 망원동은 특히 독립 음악 씬과 실험적인 공간 연출로 주목받는 지역입니다. 2024년 기준, 망원동에는 30여 개의 클럽이 운영 중이며, 그중에서도 엄격한 사운드 시스템, 큐레이션된 음악, 그리고 공간의 미학을 갖춘 장소만을 선별했습니다.
-                </p>
-                <p>
-                    각 클럽은 고유한 정체성을 지니며, 방문객에게 단순한 음악 감상을 넘어 총체적인 경험을 제공합니다. 본 가이드는 데이터 기반 리서치와 현장 방문을 통해 작성되었으며, 모든 추천은 전문가의 시각에서 이루어졌습니다.
-                </p>
-            </section>
+ <!-- Section: Introduction -->
+ <section>
+ <h2>에디터리얼 노트</h2>
+ <p>
+ 클럽 문화는 단순한 유흥을 넘어 하나의 예술적 표현입니다. 망원동은 특히 독립 음악 씬과 실험적인 공간 연출로 주목받는 지역입니다. 2024년 기준, 망원동에는 30여 개의 클럽이 운영 중이며, 그중에서도 엄격한 사운드 시스템, 큐레이션된 음악, 그리고 공간의 미학을 갖춘 장소만을 선별했습니다.
+ </p>
+ <p>
+ 각 클럽은 고유한 정체성을 지니며, 방문객에게 단순한 음악 감상을 넘어 총체적인 경험을 제공합니다. 본 가이드는 데이터 기반 리서치와 현장 방문을 통해 작성되었으며, 모든 추천은 전문가의 시각에서 이루어졌습니다.
+ </p>
+ </section>
 
-            <hr>
+ <hr>
 
-            <!-- Section: UGC Reviews -->
-            <section>
-                <h2>실제 방문자 리뷰</h2>
-                <div class="review-grid">
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="author">J.hyun_***</span>
-                            <span class="date">2024년 11월 15일</span>
-                            <span class="stars">★★★★★</span>
-                        </div>
-                        <blockquote>
-                            사운드 시스템이 놀랍도록 정교합니다. 저음의 해상도가 특히 뛰어나며, 공간의 음향 설계가 완벽에 가깝습니다. 망원에서 이 정도 퀄리티는 처음입니다.
-                        </blockquote>
-                    </div>
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="author">S.young_***</span>
-                            <span class="date">2024년 10월 28일</span>
-                            <span class="stars">★★★★☆</span>
-                        </div>
-                        <blockquote>
-                            인테리어의 디테일이 인상적입니다. 조명과 질감의 조화가 매우 전문적이며, 공간 자체가 하나의 설치미술 같았습니다. 다만 주말에는 혼잡함이 아쉽습니다.
-                        </blockquote>
-                    </div>
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="author">M.in_***</span>
-                            <span class="date">2024년 10월 12일</span>
-                            <span class="stars">★★★★★</span>
-                        </div>
-                        <blockquote>
-                            큐레이터의 음악적 안목이 돋보입니다. 장르의 경계를 허무는 세트리스트는 매 방문마다 새로운 발견을 선사합니다. 망원 클럽 추천의 최상단에 올릴 만한 곳입니다.
-                        </blockquote>
-                    </div>
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="author">K.won_***</span>
-                            <span class="date">2024년 9월 30일</span>
-                            <span class="stars">★★★★☆</span>
-                        </div>
-                        <blockquote>
-                            칵테일 메뉴의 구성이 클래식하면서도 실험적입니다. 바텐더의 전문성이 느껴지는 프레젠테이션. 음악과 음료의 페어링이 돋보이는 공간입니다.
-                        </blockquote>
-                    </div>
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="author">L.jin_***</span>
-                            <span class="date">2024년 9월 14일</span>
-                            <span class="stars">★★★★★</span>
-                        </div>
-                        <blockquote>
-                            이 클럽은 단순한 유흥 공간을 넘어 문화적 경험을 제공합니다. 아티스트와의 협업 전시, 라이브 세션 등 프로그램의 깊이가 남다릅니다. 강력히 추천합니다.
-                        </blockquote>
-                    </div>
-                </div>
-            </section>
+ <!-- Section: UGC Reviews -->
+ <section>
+ <h2>실제 방문자 리뷰</h2>
+ <div class="review-grid">
+ <div class="review-card">
+ <div class="meta">
+ <span class="author">J.hyun_***</span>
+ <span class="date">2024년 11월 15일</span>
+ <span class="stars">★★★★★</span>
+ </div>
+ <blockquote>
+ 사운드 시스템이 놀랍도록 정교합니다. 저음의 해상도가 특히 뛰어나며, 공간의 음향 설계가 완벽에 가깝습니다. 망원에서 이 정도 퀄리티는 처음입니다.
+ </blockquote>
+ </div>
+ <div class="review-card">
+ <div class="meta">
+ <span class="author">S.young_***</span>
+ <span class="date">2024년 10월 28일</span>
+ <span class="stars">★★★★☆</span>
+ </div>
+ <blockquote>
+ 인테리어의 디테일이 인상적입니다. 조명과 질감의 조화가 매우 전문적이며, 공간 자체가 하나의 설치미술 같았습니다. 다만 주말에는 혼잡함이 아쉽습니다.
+ </blockquote>
+ </div>
+ <div class="review-card">
+ <div class="meta">
+ <span class="author">M.in_***</span>
+ <span class="date">2024년 10월 12일</span>
+ <span class="stars">★★★★★</span>
+ </div>
+ <blockquote>
+ 큐레이터의 음악적 안목이 돋보입니다. 장르의 경계를 허무는 세트리스트는 매 방문마다 새로운 발견을 선사합니다. 망원 클럽 추천의 최상단에 올릴 만한 곳입니다.
+ </blockquote>
+ </div>
+ <div class="review-card">
+ <div class="meta">
+ <span class="author">K.won_***</span>
+ <span class="date">2024년 9월 30일</span>
+ <span class="stars">★★★★☆</span>
+ </div>
+ <blockquote>
+ 칵테일 메뉴의 구성이 클래식하면서도 실험적입니다. 바텐더의 전문성이 느껴지는 프레젠테이션. 음악과 음료의 페어링이 돋보이는 공간입니다.
+ </blockquote>
+ </div>
+ <div class="review-card">
+ <div class="meta">
+ <span class="author">L.jin_***</span>
+ <span class="date">2024년 9월 14일</span>
+ <span class="stars">★★★★★</span>
+ </div>
+ <blockquote>
+ 이 클럽은 단순한 유흥 공간을 넘어 문화적 경험을 제공합니다. 아티스트와의 협업 전시, 라이브 세션 등 프로그램의 깊이가 남다릅니다. 강력히 추천합니다.
+ </blockquote>
+ </div>
+ </div>
+ </section>
 
-            <hr>
+ <hr>
 
-            <!-- Section: Curated Insights -->
-            <section>
-                <h2>큐레이티드 인사이트</h2>
-                <p>
-                    망원동 클럽 씬의 핵심은 다양성에 있습니다. 각 클럽은 저마다의 철학과 미학을 기반으로 운영되며, 이는 방문객에게 선택의 폭을 넓혀줍니다. 2024년 하반기 트렌드로는 빈티지 오디오 시스템의 도입과 공간의 아날로그 감성 강조가 두드러집니다.
-                </p>
-                <p>
-                    전문가로서 강조하고 싶은 점은 단순한 인기도보다 공간의 정체성과 음악적 일관성입니다. 진정한 클럽 경험은 순간의 유행을 넘어 오래도록 기억에 남는 감각적 자극에서 비롯됩니다. 망원동은 그러한 경험을 제공할 잠재력이 가장 큰 지역 중 하나입니다.
-                </p>
-                <div class="fine-border" style="margin-top: 48px;">
-                    <p style="margin-bottom: 0; font-style: italic; color: #c5a880;">
-                        "좋은 클럽은 단순히 음악을 재생하는 공간이 아니라, 공간 자체가 하나의 악기가 되어야 한다." — 에디터리얌
-                    </p>
-                </div>
-            </section>
+ <!-- Section: Curated Insights -->
+ <section>
+ <h2>큐레이티드 인사이트</h2>
+ <p>
+ 망원동 클럽 씬의 핵심은 다양성에 있습니다. 각 클럽은 저마다의 철학과 미학을 기반으로 운영되며, 이는 방문객에게 선택의 폭을 넓혀줍니다. 2024년 하반기 트렌드로는 빈티지 오디오 시스템의 도입과 공간의 아날로그 감성 강조가 두드러집니다.
+ </p>
+ <p>
+ 전문가로서 강조하고 싶은 점은 단순한 인기도보다 공간의 정체성과 음악적 일관성입니다. 진정한 클럽 경험은 순간의 유행을 넘어 오래도록 기억에 남는 감각적 자극에서 비롯됩니다. 망원동은 그러한 경험을 제공할 잠재력이 가장 큰 지역 중 하나입니다.
+ </p>
+ <div class="fine-border" style="margin-top: 48px;">
+ <p style="margin-bottom: 0; font-style: italic; color: #c5a880;">
+ "좋은 클럽은 단순히 음악을 재생하는 공간이 아니라, 공간 자체가 하나의 악기가 되어야 한다." — 에디터리얌
+ </p>
+ </div>
+ </section>
 
-        </div>
-    </main>
+ </div>
+ </main>
 
-    <!-- Contact Section -->
-    <div class="container">
-        <div class="contact-info">
-            <p style="margin-bottom: 12px; letter-spacing: 0.1em; color: #c5a880;">문의 및 예약</p>
-            <a href="tel:01062790862">010-6279-0862</a>
-            <p style="margin-top: 16px; font-size: 0.8rem; color: #8a8070;">상담 시간: 평일 14:00 – 22:00</p>
-        </div>
-    </div>
+ <!-- Contact Section -->
+ <div class="container">
+ <div class="contact-info">
+ <p style="margin-bottom: 12px; letter-spacing: 0.1em; color: #c5a880;">문의 및 예약</p>
+ 
+ <p style="margin-top: 16px; font-size: 0.8rem; color: #8a8070;">상담 시간: 평일 14:00 – 22:00</p>
+ </div>
+ </div>
 
-    <!-- Footer -->
-    
+ <!-- Footer -->
+ 
 
 
 <!-- PBN Recent Posts Feed Section -->
 <section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">1972 청문회 페이지 누락, 망원 클럽 추천에서 본 MKUltra 의 그림자</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">제 3 부 제본의 마지막 페이지에서 갑자기 잉크가 끊긴 그 순간을 기억하시나요? 당시 청문회 기록에는 명확하게 표기된 문서 번호 뒤에 두 개의 빈 줄이 남겨져 있고, 바로 그 뒤에 서브 프로젝트 세 건의 코드가 숨겨진 채로 넘어갔습니다. 표면적 기록에서는 '심리 조작'</p>
-      </div>
-      <a href="posts/field_note-001-npfhhw.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>💡 GUIDE</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">개발자가 숨긴 세 개의 그림자, 망원 클럽 추천으로 확인한 실패 코드</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">로그 파일에 기록된 마지막 전투 데이터, 그 뒤에 숨겨진 세 개의 실루엣이 아직도 화면을 흐트러뜨리고 있군. 사람들은 스팀 출시 3 일 만에 급작스럽게 판매가 중단된 게임 이야기를 들으면 단순한 마케팅 실패로 치부하지만, 진짜 문제는 코드 안에 박힌 미사용 보스의 패턴</p>
-      </div>
-      <a href="posts/guide-002-1btckyp.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
+ <div style="max-width:1100px;margin:0 auto">
+ <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+ <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+ 
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-06-15">2026-06-15</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">1972 청문회 페이지 누락, 망원 클럽 추천에서 본 MKUltra 의 그림자</h4>
+ <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">제 3 부 제본의 마지막 페이지에서 갑자기 잉크가 끊긴 그 순간을 기억하시나요? 당시 청문회 기록에는 명확하게 표기된 문서 번호 뒤에 두 개의 빈 줄이 남겨져 있고, 바로 그 뒤에 서브 프로젝트 세 건의 코드가 숨겨진 채로 넘어갔습니다. 표면적 기록에서는 '심리 조작'</p>
+ </div>
+ <a href="posts/field_note-001-npfhhw.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>💡 GUIDE</span>
+ <time datetime="2026-06-15">2026-06-15</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">개발자가 숨긴 세 개의 그림자, 망원 클럽 추천으로 확인한 실패 코드</h4>
+ <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">로그 파일에 기록된 마지막 전투 데이터, 그 뒤에 숨겨진 세 개의 실루엣이 아직도 화면을 흐트러뜨리고 있군. 사람들은 스팀 출시 3 일 만에 급작스럽게 판매가 중단된 게임 이야기를 들으면 단순한 마케팅 실패로 치부하지만, 진짜 문제는 코드 안에 박힌 미사용 보스의 패턴</p>
+ </div>
+ <a href="posts/guide-002-1btckyp.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
+ 
+ </div>
+ <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
+ 
+ </div>
+ <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h4>
+ 
+ </div>
+ <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h4>
+ 
+ </div>
+ <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h4>
+ 
+ </div>
+ <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ </div>
+ </div>
 </section>
 <footer>
-        <div class="container">
-            <p>© 2024 MANGWON CLUB EDITORIAL. ALL RIGHTS RESERVED.</p>
-            <p>망원 클럽 추천 | 노이어 골드 에디터리얼</p>
-            <p style="margin-top: 16px; font-size: 0.7rem; color: #6a6050;">본 사이트는 전문가 시각의 큐레이티드 콘텐츠를 제공합니다.</p>
-        </div>
-    </footer>
+ <div class="container">
+ <p>© 2024 MANGWON CLUB EDITORIAL. ALL RIGHTS RESERVED.</p>
+ <p>망원 클럽 추천 | 노이어 골드 에디터리얼</p>
+ <p style="margin-top: 16px; font-size: 0.7rem; color: #6a6050;">본 사이트는 전문가 시각의 큐레이티드 콘텐츠를 제공합니다.</p>
+ </div>
+ </footer>
 
-    <script>
-        function toggleMenu() {
-            const nav = document.getElementById('mobileNav');
-            nav.classList.toggle('active');
-        }
-    </script>
+ <script>
+ function toggleMenu() {
+ const nav = document.getElementById('mobileNav');
+ nav.classList.toggle('active');
+ }
+ </script>
 
 </body>
 </html>
